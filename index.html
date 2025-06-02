@@ -1,139 +1,244 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <title>MPB</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engenharia Aeroespacial - Melhores Faculdades</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        header {
+            background-color: #003366; /* Azul escuro */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        
+        nav {
+            background-color: #002244; /* Azul mais escuro */
+            padding: 10px 0;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav li {
+            margin: 0 15px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: #004488;
+        }
+        
+        .hero {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1454789548928-9efd52dc4031?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            margin-bottom: 30px;
+        }
+        
+        .hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+        
+        .card-header {
+            background-color: #003366;
+            color: white;
+            padding: 15px 20px;
+            font-size: 1.2em;
+        }
+        
+        .card-body {
+            padding: 20px;
+        }
+        
+        .faculdade {
+            border-left: 4px solid #003366;
+            padding-left: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .faculdade h3 {
+            color: #003366;
+            margin-top: 0;
+        }
+        
+        footer {
+            background-color: #002244;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #003366;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #004488;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav li {
+                margin: 5px 0;
+            }
+        }
+    </style>
 </head>
-
 <body>
-    <header class=" p-5">
-
-        <nav class="container d-flex justify-content-between align-items-center">
-            <img src="img/log.jpg" alt="Logotipo da Tropicália" class="nav-img " loading="lazy">
-            <ul class="nav mt-5">
-                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
-                <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-            </ul>          
-        </nav>
-       
+    <header>
+        <div class="container">
+            <h1>Engenharia Aeroespacial</h1>
+            <p>Conheça as melhores faculdades e oportunidades na área</p>
+        </div>
     </header>
-
-
-    <main class="container my-5">
-
-        <section id="inicio" class="my-5">
-            <div class="inicio-fundo d-flex justify-content-between align-items-center">
-                <div class="esquerda-conteudo">
-                    <h1 class="display-4 text-white fst-italic fw-bold">Boas-vindas ao</h1>
-                    <img src="img/mpb.png" alt="Logotipo secundário da Tropicália" class="mb-3" width="563"
-                        height="278" loading="lazy">
-                    <a href="#tropicalia"
-                        class="btn btn-primary btn-lg botao-inicio fw-semibold">Quero
-                        conhecer!</a>
-                </div>
-
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#sobre">Sobre o Curso</a></li>
+                <li><a href="#faculdades">Faculdades</a></li>
+                <li><a href="#mercado">Mercado de Trabalho</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <section class="hero">
+        <div class="container">
+            <h2>Explore o Universo da Engenharia Aeroespacial</h2>
+            <p>Descubra as melhores instituições para estudar e se tornar um profissional na área aeroespacial</p>
+            <a href="#faculdades" class="btn">Ver Faculdades</a>
+        </div>
+    </section>
+    
+    <div class="container">
+        <section id="sobre" class="card">
+            <div class="card-header">
+                <h2>Sobre o Curso de Engenharia Aeroespacial</h2>
+            </div>
+            <div class="card-body">
+                <p>A Engenharia Aeroespacial é o ramo da engenharia que se dedica ao projeto, construção e manutenção de aeronaves, espaçonaves, satélites e mísseis. Combina conhecimentos de aerodinâmica, estruturas, propulsão, materiais e sistemas eletrônicos.</p>
+                <p>O curso tem duração média de 5 anos e forma profissionais capazes de atuar em diversas áreas do setor aeroespacial, desde o projeto de aeronaves até a exploração espacial.</p>
             </div>
         </section>
-
-        <section id="tropicalia" class="my-5 pt-6 secao-tropicalia">
-            <div class="container d-flex align-items-center ">
-                  <div class="col-5">
-                    <h2>O que foi o MPB?</h2>
-                    <p class="p-2">A música popular brasileira, conhecida como MPB, é um gênero musical. Tem relação com a produção nacional desenvolvida a partir de um movimento cultural surgido após o golpe militar de 1964.
-
-                        A maioria das músicas produzidas no período contestava a ditadura, trazendo questionamentos sobre a situação brasileira de forma poética.
-                        
-                        Já quando se fala da música brasileira com caráter popular, refere-se ao conjunto de manifestações culturais de influência indígena, africana e europeia no país..</p>
-                        <h2> A História do MPB</h2>
-                        <p>A década de 60 é considerada um período de ebulição na música brasileira. É quando passam a coexistir o samba, o jazz, a bossa nova, o sertanejo de raiz, a moda de viola, o baião nordestino, o rock e outros.
-
-                            Esse período é considerado um marco para o cenário da música nacional. Compositores e intérpretes passam a mesclar influências da bossa nova com estilos sonoros produzidos nos Centros Populares de Cultura da União Nacional dos Estudantes.
-                            
-                            O contexto era o da Ditadura Militar, que cassou direitos e restringiu a liberdade, censurando os movimentos culturais. É nessa conjuntura que jovens músicos começam a contestar o duro regime, criando letras inteligentes e de protesto, muitas vezes de forma disfarçada.
-                            
-                            A partir dessa fase é popularizada a sigla MPB como marca de um movimento próprio de contestação social e política.
-                            
-                            Além disso, outros temas também foram abordados, como as relações amorosas.
-                            
-                            Os Festivais de Música, ou Festivais da Canção, realizados nos anos 60 e transmitidos na televisão, foram muito importantes para que músicos e compositores do período ficassem conhecidos. </p>
-                        <h3> Nomes importantes da MPB</h3>
-                        <P> São muitos os grandes nomes da MPB, sendo difícil listar todas as personalidades importantes desse gênero. Entretanto, podemos destacar o carioca Chico Buarque como um dos maiores representantes, ao lado de Caetano Veloso, Geraldo Vandré, Gilberto Gil, Milton Nascimento, Edu Lobo, Nara Leão, Elis Regina, Maria Bethânia, Gonzaguinha, Tom Zé, Os Mutantes, entre outros.
-
-                            Há ainda o baiano Raul Seixas, que muda a era do rock nacional revelado pela Jovem Guarda. O artista impõe letras marcadas pela contrariedade à rotina, à exploração social e do trabalho.
-                            
-                            Como movimento, a MPB também é manifestada pelo lirismo, com letras que abordam as relações amorosas. Nessa faceta da MPB, Chico Buarque é elevado a uma espécie de tradutor da alma feminina, revelando seus desejos, culpas e sonhos no estilo denominado "cantiga e amigo".
-                            
-                            Manifestação semelhante é observada no trabalho de Caetano e Gil, além de outros, como Djavan, Gal Costa, Simone e Leila Pinheiro.</P>
+        
+        <section id="faculdades" class="card">
+            <div class="card-header">
+                <h2>Melhores Faculdades de Engenharia Aeroespacial</h2>
+            </div>
+            <div class="card-body">
+                <div class="faculdade">
+                    <h3>Instituto Tecnológico de Aeronáutica (ITA)</h3>
+                    <p><strong>Localização:</strong> São José dos Campos, SP</p>
+                    <p><strong>Destaque:</strong> Considerada a melhor instituição da América Latina na área aeroespacial, com forte ligação com o setor militar e a Embraer.</p>
+                    <a href="https://www.ita.br/" class="btn" target="_blank">Visitar Site</a>
+                </div>
                 
-                    </div>
-            </div>
-        </section>
-
-        <section id="galeria">
-            <h2 class="text-center pt-5">Galeria</h2>
-            <div class="container p-3 mt-3 fundo-galeria ">
-
-                <div class="row justify-content-md-center">
-                    <div class="col-md-4">
-                        <img src="img/chico.jpg"
-                            class="img-fluid rounded-5" loading="lazy">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="img/milton.jpg" class="img-fluid rounded-5"
-                            loading="lazy">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="img/junio.jpg" class="img-fluid rounded-5"
-                            loading="lazy">
-                    </div>
+                <div class="faculdade">
+                    <h3>Universidade de São Paulo (USP) - São Carlos</h3>
+                    <p><strong>Localização:</strong> São Carlos, SP</p>
+                    <p><strong>Destaque:</strong> Excelente infraestrutura e parcerias com centros de pesquisa nacionais e internacionais.</p>
+                    <a href="https://www.eesc.usp.br/" class="btn" target="_blank">Visitar Site</a>
+                </div>
+                
+                <div class="faculdade">
+                    <h3>Universidade Federal de Minas Gerais (UFMG)</h3>
+                    <p><strong>Localização:</strong> Belo Horizonte, MG</p>
+                    <p><strong>Destaque:</strong> Programa de engenharia aeroespacial com foco em pesquisa e desenvolvimento tecnológico.</p>
+                    <a href="https://www.ufmg.br/" class="btn" target="_blank">Visitar Site</a>
+                </div>
+                
+                <div class="faculdade">
+                    <h3>Universidade Federal do ABC (UFABC)</h3>
+                    <p><strong>Localização:</strong> Santo André, SP</p>
+                    <p><strong>Destaque:</strong> Abordagem interdisciplinar com forte base em ciências fundamentais.</p>
+                    <a href="https://www.ufabc.edu.br/" class="btn" target="_blank">Visitar Site</a>
                 </div>
             </div>
         </section>
-
-        <section id="contato">
-            <div class="container p-5 d-flex justify-content-center">
-                <div class="col-md-8 col-lg-10 rounded-5 formulario"> <!-- Caixa do formulário com 60% de largura -->
-                    <h2 class="mb-3">Entre em contato</h2>
-                    <form>
-                        <div class="form-group mb-3">
-                            <label for="nome">Nome</label>
-                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1"
-                                placeholder="Digite seu nome completo">
-                        </div>
-                        <div class="form-group mb-3">
-                            <label for="email">E-mail</label>
-                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1"
-                                placeholder="Digite seu email">
-                        </div>
-                        <div class="form-group mb-3">
-                            <label for="mensagem">Mensagem</label>
-                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4"
-                                placeholder="Escreva sua mensagem"></textarea>
-                        </div>
-                        <div class="d-grid gap-2">
-                            <button type="submit" class="btn btn-primary btn-lg rounded-pill tamanho-botao">Enviar
-                                mensagem</button>
-                        </div>
-                    </form>
-                </div>
+        
+        <section id="mercado" class="card">
+            <div class="card-header">
+                <h2>Mercado de Trabalho</h2>
+            </div>
+            <div class="card-body">
+                <p>O engenheiro aeroespacial pode atuar em diversas áreas:</p>
+                <ul>
+                    <li>Projeto e fabricação de aeronaves</li>
+                    <li>Pesquisa e desenvolvimento de tecnologias aeroespaciais</li>
+                    <li>Manutenção de aeronaves</li>
+                    <li>Empresas do setor aeroespacial (Embraer, Boeing, Airbus, etc.)</li>
+                    <li>Agências espaciais (INPE, NASA, ESA)</li>
+                    <li>Forças Armadas</li>
+                </ul>
+                <p>O mercado brasileiro tem grande potencial, com destaque para o polo aeroespacial de São José dos Campos e o crescimento do programa espacial brasileiro.</p>
             </div>
         </section>
-    </main>
-    <footer class="text-center p-3 fst-italic">
-        <p>Acesse nossas redes:</p>
-        <i class="bi bi-whatsapp"></i>
-        <i class="bi bi-instagram"></i>
-        <i class="bi bi-tiktok"></i>
-        <p class="mt-3">Desenvolvido por Start by Alura. Projeto fictício sem fins comerciais.</p>
+    </div>
+    
+    <footer id="contato">
+        <div class="container">
+            <p>&copy; 2023 Engenharia Aeroespacial - Todos os direitos reservados</p>
+            <p>Contato: contato@aeroespacial.edu.br | (11) 1234-5678</p>
+        </div>
     </footer>
-    <script src="script.js"></script>
-
 </body>
-
 </html>
